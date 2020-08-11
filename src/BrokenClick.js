@@ -6,10 +6,18 @@ class BrokenClick extends Component {
         this.state = {
             click: false
         };
-        this.handleClick = this.handleClick.bind(this);
+        // this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(e){
+    // handleClick(e){
+    //     if(this.state.click){
+    //         this.setState({click : false});
+    //     }else{
+    //         this.setState({click : true});
+    //     }
+    // }
+
+    handleClick = (e) => {
         if(this.state.click){
             this.setState({click : false});
         }else{
